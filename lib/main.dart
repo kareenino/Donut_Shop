@@ -2,6 +2,7 @@
 import 'package:donut_shop/pages/landing.dart';
 import 'package:donut_shop/pages/splash.dart';
 import 'package:donut_shop/services/bottombar_service.dart';
+import 'package:donut_shop/services/cart_service.dart';
 import 'package:donut_shop/services/donutbar_service.dart';
 import 'package:donut_shop/utility/constants.dart';
 import 'package:donut_shop/widgets/details.dart';
@@ -18,7 +19,10 @@ void main() {
         ),
         ChangeNotifierProvider(
           create: (_) => DonutService()
-        )
+        ),
+        ChangeNotifierProvider(
+          create: (_) => DonutShoppingCartService()
+        ),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
