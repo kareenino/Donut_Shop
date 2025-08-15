@@ -4,6 +4,7 @@ import 'package:donut_shop/pages/splash.dart';
 import 'package:donut_shop/services/bottombar_service.dart';
 import 'package:donut_shop/services/donutbar_service.dart';
 import 'package:donut_shop/utility/constants.dart';
+import 'package:donut_shop/widgets/details.dart';
 // import 'package:donut_shop/widgets/bottombar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -25,7 +26,8 @@ void main() {
         navigatorKey: Utils.mainAppNav,
         routes: {
           '/': (context) => SplashPage(),
-          '/main': (context) => DonutShopMain()
+          '/main': (context) => DonutShopMain(),
+          '/details': (context) => DonutShopDetails(),
         }
       ),
     ), 

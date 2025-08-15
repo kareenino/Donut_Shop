@@ -12,6 +12,16 @@ class DonutService extends ChangeNotifier{
   
   String? selectedDonutType;
   List<DonutModel> filteredDonuts = [];
+  late DonutModel selectedDonut;
+
+  DonutModel getSelecteDonut() {
+    return selectedDonut;
+  }
+
+  void onDonutSelected(DonutModel donut) {
+    selectedDonut = donut;
+    Utils.mainAppNav.currentState!.pushNamed('/details');
+  }
 
   DonutService() {
     selectedDonutType = filterBarItems.first.id;
@@ -22,6 +32,7 @@ class DonutService extends ChangeNotifier{
     selectedDonutType = type;
     filteredDonuts = Utils.donuts.where(
       (d) => d.type == selectedDonutType).toList();
+
     notifyListeners();
   }
 }
