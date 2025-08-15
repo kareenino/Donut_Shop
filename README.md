@@ -1,16 +1,5 @@
-# donut_shop
+## Donut Shop
 
-A new Flutter project.
+DonutShop is a fun little Flutter app built to show off a stylish donut-themed UI with smooth animations and custom navigation. It was made as part of a Flutter codelab by Roman Jaquez, and it's packed with cool stuff like a swipeable donut carousel, a custom bottom nav bar, and a slick filtering bar to browse different types of donuts.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The app uses the provider package to manage state, and it’s a great starting point if you’re looking to learn how to structure a Flutter app cleanly with modular widgets and dynamic page routing.
